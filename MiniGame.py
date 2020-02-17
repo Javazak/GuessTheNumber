@@ -9,8 +9,16 @@ while userInput != secretNumber:
         break
     elif userInput > secretNumber:
         count += 1
-        print("Lower , lower )))")
+        if count < 4:
+            print("Lower , lower )))")
+        else:
+            print("Sorry , but game is over... ")
+            break
     elif userInput < secretNumber:
         count += 1
-        print("Bigger , bigger ...")
+        if count < 4:
+            print("Bigger , bigger ...")
+        else:
+            print("Sorry , but game is over... ")
+            break
 
